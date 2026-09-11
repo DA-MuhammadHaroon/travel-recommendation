@@ -7,9 +7,22 @@
     <nav>
         <a href="index.html">Home</a> |
         <a href="about.html">About Us</a> |
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html">Contact Us</a> |
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="search()">Search</button>
+        <button onclick="clearSearch()">Clear</button>
     </nav>
     <h1>Welcome to Travel Recommendation</h1>
     <p>This website helps you find the best beaches, temples, and travel spots based on your favorite country.</p>
+
+    <script>
+        function search() {
+            var input = document.getElementById("searchInput").value;
+            alert("Searching for: " + input);
+        }
+        function clearSearch() {
+            document.getElementById("searchInput").value = "";
+        }
+    </script>
 </body>
 </html>
