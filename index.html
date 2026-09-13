@@ -31,8 +31,16 @@
                     <h3>Bora Bora Beach</h3>
                     <img src="https://images.unsplash.com/photo-1589197331516-4d84b72ebde3?w=400" width="400">
                 `;
+            } else if (input.includes("temple")) {
+                results.innerHTML = `
+                    <h2>Temple Recommendations</h2>
+                    <h3>Golden Temple, India</h3>
+                    <img src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?w=400" width="400">
+                    <h3>Angkor Wat Temple, Cambodia</h3>
+                    <img src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=400" width="400">
+                `;
             } else {
-                results.innerHTML = "<p>No results found. Try searching 'beach'.</p>";
+                results.innerHTML = "<p>No results found. Try searching 'beach' or 'temple'.</p>";
             }
         }
         function clearSearch() {
